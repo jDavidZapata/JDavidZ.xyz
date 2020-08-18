@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Error</h1>
+<h1>An unexpected error has occurred</h1>
+<p>The administrator has been notified. Sorry for the inconvenience!</p>
+<a class="btn btn-danger" href="{% url 'main:homepage' %}">Back To Home</a>
+{% endblock %}
+            
