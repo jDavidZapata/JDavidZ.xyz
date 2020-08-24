@@ -13,10 +13,10 @@
         <a class="nav-link" href="{% url 'main:homepage' %}"><span class="glyphicon glyphicon-home" style="font-size:20px;color:red;"></span> Home </a>        
       </li>
       <li class="nav-item {% if request.path == '/about/' %}active{% endif %}">
-        <a class="nav-link" href="{% url 'main:homepage' %}"><span class="glyphicon glyphicon-info-sign" style="font-size:20px;color:red;"></span> About </a>
+        <a class="nav-link" href="{% url 'main:homepage' %}#about"><span class="glyphicon glyphicon-info-sign" style="font-size:20px;color:red;"></span> About </a>
       </li>      
       <li class="nav-item {% if request.path == '/contact/' %}active{% endif %}">
-        <a class="nav-link" href="{% url 'main:homepage' %}"> <span class="glyphicon glyphicon-envelope" style="font-size:20px;color:red;"></span> Contact</a>
+        <a class="nav-link" href="{% url 'main:homepage' %}#contact"> <span class="glyphicon glyphicon-envelope" style="font-size:20px;color:red;"></span> Contact</a>
       </li>
       <li class="nav-item {% if request.path == '/projects/' %}active{% endif %}">
         <a class="nav-link" href="{% url 'main:projectspage' %}">Projects <span class="glyphicon glyphicon-fire" style="font-size:20px;color:red;"></span></a>

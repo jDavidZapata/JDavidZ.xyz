@@ -2,68 +2,115 @@
 {% load static %}
 {% block content %}
 
-<div id="container1" class="container-fluid d-flex align-items-center flex-column" style="min-height:690px;color:red;">
+<div id="container1" class="container-fluid d-flex align-items-center flex-column" style="min-height:550px;color:red;">
       
     <div class="row align-items-center">
-        <h1 style="font-size:74px;font-weight:bold;color:black;">Hello World, </h1>         
+        <h1 style="font-size:40px;font-weight:bold;color:black;">Hello World, </h1>         
     </div>
 
     <div class="row align-items-center">
-        <h1 style="font-size:74px;font-weight:bold;color:blue;">I am &nbsp;</h1>        
-        <h1 id="name">JDavidZ.com</h1>        
+        <h1 style="font-size:40px;font-weight:bold;color:blue;">I'm &nbsp;</h1>        
+        <h1 id="name">J David Zapata</h1>        
+    </div>
+    
+    <div class="row align-items-center">
+        <h1 style="font-size:40px;color:blue;">a </h1>                 
     </div>
 
-    <div class="row align-items-center align-self-end mt-auto" style="position:fixed;height:1025px;">
-        <h1 style="font-size:74px;"><strong>*#*</strong></h1>                 
+    <div class="row justify-content-center">
+        <div class='col-12 col-md-6 col-lg-4 text-center'>
+            <h1 style="font-size:40px;color:blue;"><strong>Web /</strong></h1>                 
+        </div>
+        <div class='col-12 col-md-6 col-lg-4 text-center'>
+            <h1 style="font-size:40px;color:blue;"><strong>App</strong></h1>                 
+        </div>
+        <div class='col-12 col-md-6 col-lg-4 text-center'>
+            <h1 style="font-size:40px;color:blue;"><strong>Developer</strong></h1>                 
+        </div>
+    </div>
+
+    <div class="row align-items-center align-self-end mt-auto" style="position:fixed;height:600px;">
+        <h1 style="font-size:40px;"><strong>*^#^*</strong></h1>                 
     </div>
     
 </div>
 
-<div id="container2" class="row d-flex justify-content-center align-items-center border border-danger" style="min-height:790px;padding:50px;">            
+<div id="about" class="row d-flex justify-content-center align-items-center border border-danger" style="min-height:790px;padding:40px;">            
     <div class="col-xl-4" style="z-index:1;">
-    <h1>About JDavidZ.com</h1>    
-    <h1 style="font-size:74px;font-weight:bold;color:red;">Developer</h1>
-    <h1 style="font-size:74px;font-weight:bold;color:red;">Front End</h1>
-    <h1 style="font-size:74px;font-weight:bold;color:red;">Back End</h1>
+    <h1>Occupational Designation: </h1>    
+    <h1 style="font-size:40px;font-weight:bold;color:red;">Web / App Developer</h1>
     </div>
-    
+    <div class="col-xl-4" style="z-index:1;">
+    <h1>Base of Operations: </h1>
+    <h1 style="font-size:40px;font-weight:bold;color:red;">Jersey Shore, USA</h1>
+    </div>
+    <div class="col-xl-4" style="z-index:1;">
+    <h1>Occupational Status: </h1>
+    <h1 style="font-size:40px;font-weight:bold;color:red;">Freelance / Available</h1>
+    </div>    
 </div>
 
-<div id="container3" class="row d-flex justify-content-center align-items-center border border-danger" style="min-height:850px;padding:50px;">
+<div id="container3" class="row d-flex justify-content-center align-items-center border border-danger" style="min-height:840px;padding:40px;">
+    <div class="col-12" style="width:auto;z-index:1;">
+        <h1>My Skills: </h1>
+    </div>
+    <div class="col-12" style="width:auto;z-index:1;">
+        <h1 style="font-size:40px;font-weight:bold;color:red;">Front-end: </h1>
+    </div>
+    <h1 style="font-size:34px;font-weight:bold;color:black;">HTML, CSS, Javascript</h1>
+    <div class="col-12" style="width:auto;z-index:1;">
+        <h1 style="font-size:40px;font-weight:bold;color:red;">Back-end: </h1>
+    </div>
+    <h1 style="font-size:34px;font-weight:bold;color:black;">SQL, Python, C++</h1>
+    <div class="col-12" style="width:75%;z-index:1;">
+        <h1 style="font-size:40px;font-weight:bold;color:red;">FrameWorks: </h1>
+    </div>
+    <h1 style="font-size:34px;font-weight:bold;color:black;">Flask, Django, React</h1> 
+</div>
+
+<div id="project0" class="row border border-danger d-flex justify-content-around align-items-center" style="min-height:790px;padding:40px;">    
+    <div class="col-12">
+        <h1>My Work: </h1>
+        <h1 style="font-size:40px;font-weight:bold;color:red;">Applications and Projects Live list.</h1>
+        <a class="btn btn-success" role="button" href="#">Check out My Projects</a>
+        <h1>OR</h1>
+        <h1 style="font-size:40px;font-weight:bold;color:red;">Applications and Projects Code on github.</h1>
+        <a class="btn btn-primary" role="button" href="https://github.com/jDavidZapata">Go To My GitHub</a>
+        
+    </div>    
+    <div class="col-12">        
+        <h1>My Personal Space: </h1>
+        <h1 style="font-size:40px;font-weight:bold;color:red;">See My Personal Stuff</h1>
+        <a class="btn btn-danger" role="button" href="#">Personal Space</a>
+    </div>
+</div>
+
+<div id="contact" class="row d-flex justify-content-center align-items-center border border-danger" style="min-height:850px;padding:50px;">
     <div class="col-12" style="width:auto;z-index:1;">
         <h1>Contact Me</h1>
     </div>
     <div class="col-12 contactform" style="width:auto;z-index:1;">
         <div class='text-center'>
-            <h1>{{ title }}</h1>
             <div>
             <a href="#"><span class="icon-twitter"></span></a>   
             </div>
             <h1>Hello World, I'm working right now...</h1>
             <h1>But if You would like to get in touch with me you can do so on</h1>
-            <h1>linkin @ #, on facebook @, on instagran @ .</h1>
+            <h1>
+                <a href="#"><img src="https://img.icons8.com/dusk/34/000000/facebook-new--v2.png">Facebook</a>
+                <a href="#"><img src="https://img.icons8.com/material/34/000000/twitter--v1.png">Twitter</a>
+                <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/google-logo.png">Google ???</a>
+            </h1>
             <br>
             <h1>OR</h1>
             <h1>You can just fill the form below</h1>
         </div>
         {% include 'form.html' %}
-        <div class='row'>
-            <img src="https://img.icons8.com/material/64/000000/twitter--v1.png">
-            <img src="https://img.icons8.com/bubbles/50/000000/google-logo.png">
-            <img src="https://img.icons8.com/dusk/64/000000/facebook-new--v2.png">
-        </div>
-        <div>
-            <i class="glyphicon glyphicon-remove"></i>
-            <a href="#"><span class="glyphicon glyphicon-remove"></span></a>   
-            <i class="material-icons">warning</i>
-            
-        </div>
+        
     </div>
     
 </div>
 
-
-
-
-
 {% endblock %}
+
+

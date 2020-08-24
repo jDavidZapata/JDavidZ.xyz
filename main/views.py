@@ -28,7 +28,7 @@ def home(request):
         context = {
             "title": "Contact",
             "body": "Body: HELLO WORLD!!! How to Contact ME",
-            "content": "732 or 201",
+            "content": "*Email require*",
             "form": form
         }
     return render(request, template_name, context)
