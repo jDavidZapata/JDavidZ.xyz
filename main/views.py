@@ -11,6 +11,7 @@ from .forms import ContactForm
 def home(request):
 
     template_name = 'main/home.html'
+
     if request.method == 'POST':
 
         form = ContactForm(request.POST or None)
@@ -22,6 +23,8 @@ def home(request):
             for field, items in form.errors.items():
                 for item in items:
                     messages.error(request, f"{field}: {item}")
+            return render(request, template_name, context={"form":form})
+
     else:        
         form = ContactForm()
         context = {
