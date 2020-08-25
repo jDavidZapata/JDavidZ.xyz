@@ -22,8 +22,7 @@ def home(request):
             for field, items in form.errors.items():
                 for item in items:
                     messages.error(request, f"{field}: {item}")
-    else:
-        
+    else:        
         form = ContactForm()
         context = {
             "title": "Contact",
@@ -31,7 +30,7 @@ def home(request):
             "content": "*Email require*",
             "form": form
         }
-    return render(request, template_name, context)
+        return render(request, template_name, context)
 
 
 def projects(request):
