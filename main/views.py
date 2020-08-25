@@ -19,9 +19,6 @@ def home(request):
             messages.info(request, f"Your message has been sended.")
             return redirect('main:homepage')
         else:
-            messages.error(request, "Invalid Form.")
-            for msg in form.error_messages:
-                messages.error(request, f"{msg}: {form.error_messages[msg]}")
             for field, items in form.errors.items():
                 for item in items:
                     messages.error(request, f"{field}: {item}")
