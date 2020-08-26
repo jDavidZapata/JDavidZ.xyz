@@ -28,7 +28,6 @@ def home(request):
     else:        
         form = ContactForm()
         context = {
-            "title": "Contact",
             "body": "Body: HELLO WORLD!!! How to Contact ME",
             "content": "*Email require*",
             "form": form
